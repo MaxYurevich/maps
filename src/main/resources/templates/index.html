@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Maps</title>
+</head>
+<body>
+
+    <h2 align="center">Добро пожаловать!</h2>
+    <div id="map" align="center"></div>
+
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: new google.maps.LatLng(-33.863276, 151.207977),
+                zoom: 10
+            });
+        }
+    </script>
+
+    <script async="async" defer="defer"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt6y9_qVzpTEMYHZNF4RUukbYmQnVqdqA&callback=initMap">
+    </script>
+</body>
+</html>
